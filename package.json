@@ -1,0 +1,30 @@
+{
+  "name": "@sugaz/v-print",
+  "version": "1.0.0",
+  "description": "vue print",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "parcel index.html",
+    "package": "npm run package-module",
+    "package-module": "tsc --outDir lib -d --module esnext",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "print"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.7.10",
+    "@types/webpack-env": "^1.16.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2",
+    "vue": "^2.6.14",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.2",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
