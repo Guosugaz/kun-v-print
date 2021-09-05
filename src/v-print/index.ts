@@ -3,7 +3,7 @@
  * @Author: Guosugaz
  * @LastEditors: Guosugaz
  * @Date: 2021-07-10 23:07:07
- * @LastEditTime: 2021-09-05 16:07:30
+ * @LastEditTime: 2021-09-05 22:05:22
  */
 import Vue from "vue";
 import Print from "./Print";
@@ -59,6 +59,7 @@ const createPrintBind = () => {
           endCallback() {
             // 调用打印之后的回调事件
             closeBtn = true;
+            binding.value.endCallback && binding.value.endCallback()
           }
         });
       }
