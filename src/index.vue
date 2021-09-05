@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button v-if="show" v-print="id">打印下面内容</button>
+    <button v-if="show" v-print="printObj">打印下面内容</button>
     <button @click="show = !show">show</button>
     <main id="myMain">
       <p>
@@ -19,7 +19,9 @@
   export default {
     data() {
       return {
-        id: "myMain",
+        printObj: {
+          id: "myMain"
+        },
         show: true
       };
     }

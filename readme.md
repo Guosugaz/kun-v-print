@@ -40,13 +40,13 @@ export default {
 ```
 
 ### 参数
-参数是 节点的id 或者 对象(内容如下)
 
-| Param | Type | Describe | default | Version |
-| :------: | :------: | :------: | :------: | :-----: |
-| id | sting | 节点的id | "" | | |
-| extraHead | string | 附加在head标签上的额外元素,使用逗号分隔 | | |
-| extraCss | string | 额外的css逗号分隔 | | |
-| popTitle | string | iframe的title | | |
-| addPrintCss | string | iframe的style | |
-| endCallback | Function | 打印后的回调 | |
+参数是 节点的 id 或者 对象(内容如下)
+
+|    Param    |  Type  |                 Describe                  | default | Version |
+| :---------: | :----: | :---------------------------------------: | :-----: | :-----: |
+|     id      | sting  |                 节点的 id                 |   ""    |         |  |
+|  extraHead  | string | 附加在 head 标签上的额外元素,使用逗号分隔 |         |         |
+|  extraCss   | string |            额外的 css 逗号分隔            |         |         |
+|  popTitle   | string |              iframe 的 title              |         |         |
+| addPrintCss | string |              iframe 的 style              |         |
