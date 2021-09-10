@@ -1,13 +1,14 @@
 {
   "name": "@sugaz/v-print",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "vue print",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "dev": "parcel index.html",
     "package": "npm run package-module",
-    "package-module": "tsc --outDir lib -d --module esnext",
+    "package-module": "tsc --outDir lib -d --module ES6",
+    "package-module-watch": "tsc --outDir lib -d --module ES6 --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
