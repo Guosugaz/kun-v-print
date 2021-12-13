@@ -4,26 +4,21 @@ interface BaseOptions {
     extraCss: string;
     popTitle: string;
     addPrintCss: string;
-    endCallback: null | (() => void);
 }
-declare type OptiosnTemp = {
+declare type Options = {
     [K in keyof BaseOptions]?: BaseOptions[K];
 };
-interface Options extends OptiosnTemp {
-    id: string;
-}
 interface Settings extends BaseOptions {
-    id: string;
     fId: string;
+    id: string;
 }
 export default class {
     standards: Record<string, string>;
+    deFaultSettings: Settings;
     settings: Settings;
-    counter: number;
     selectArray: never[];
     constructor(option: Options);
-    private init;
-    private print;
+    print(id: string, option?: Options): false | undefined;
     private write;
     private docType;
     private getHead;

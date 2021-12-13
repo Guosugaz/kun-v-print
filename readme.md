@@ -1,6 +1,4 @@
-# v-print
-
-> 使用 vue 的指令实现布局打印
+# vue 局部打印
 
 ## 快速运行
 
@@ -25,14 +23,14 @@ Vue.use(VPrint);
   <main id="block">
     <p>打印这些内容</p>
   </main>
-  <button v-print="id">打 印</button>
+  <button @click="handlePrint">打 印</button>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      id: "block"
+  methods: {
+    handlePrint() {
+      this.$VPrint.print("block");
     }
   }
 }
@@ -41,11 +39,12 @@ export default {
 
 ### 参数
 
-参数是 节点的 id 或者 对象(内容如下)
+print(id: string, options: Option)
+
+### Otpions:
 
 |    Param    |  Type  |                 Describe                  | default | Version |
 | :---------: | :----: | :---------------------------------------: | :-----: | :-----: |
-|     id      | sting  |                 节点的 id                 |   ""    |         |  |
 |  extraHead  | string | 附加在 head 标签上的额外元素,使用逗号分隔 |         |         |
 |  extraCss   | string |            额外的 css 逗号分隔            |         |         |
 |  popTitle   | string |              iframe 的 title              |         |         |

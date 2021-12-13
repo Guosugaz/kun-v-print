@@ -1,8 +1,8 @@
 import Vue from "vue";
 import App from "./index.vue";
-import vPrint from "../lib/index";
+import VPrint from "../lib/index";
 
-Vue.use(vPrint);
+Vue.use(VPrint);
 
 new Vue({
   el: "#app",

@@ -11,7 +11,6 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": false,
-    "baseUrl": "../../form",
     "strictPropertyInitialization": false,
     "types": [
       "webpack-env",
